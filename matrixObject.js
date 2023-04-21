@@ -40,7 +40,10 @@ function sumMatrixObj(m1, m2) {
     for (let j = 0; j < m1[i].length; j++)
       ms[i].push({
         value: m1[i][j].value + m2[i][j].value,
-        color: "red",
+        color:
+          Math.floor(Math.random() * 2) + 1 == 1
+            ? m1[i][j].color
+            : m2[i][j].color,
       });
   }
   return ms;
