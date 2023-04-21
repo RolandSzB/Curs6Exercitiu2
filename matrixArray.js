@@ -1,23 +1,23 @@
-const m1 = [
+const matrix1 = [
   [1, 2, 3],
   [4, 5, 6],
   [7, 8, 9],
 ];
 
-const m2 = [
+const matrix2 = [
   [1, 2, 3],
   [4, 5, 6],
   [7, 8, 9],
 ];
 
-function sumaMatrix(m1, m2) {
+function sumaMatrix(matrix1, matrix2) {
   let matriceSuma = [];
-  for (let i = 0; i < m1.length; i++) {
+  for (let i = 0; i < matrix1.length; i++) {
     matriceSuma.push([]);
-    for (let j = 0; j < m1[i].length; j++)
-      matriceSuma[i].push(m1[i][j] + m2[i][j]);
+    for (let j = 0; j < matrix1[i].length; j++)
+      matriceSuma[i].push(matrix1[i][j] + matrix2[i][j]);
   }
   return matriceSuma;
 }
 
-console.log(sumaMatrix(m1, m2));
+console.log(sumaMatrix(matrix1, matrix2));
